@@ -71,13 +71,16 @@ For
 	mov r0, #0
 	mov r1, #0
 ;	reel*=reel
-	smlal R0, R1,R4,R4
+	smlal R1, R0,R4,R4
 	
 ;	return imag*image+reel
-	smlal R0, R1,R5,R5
+	smlal R1, R0,R5,R5
 	pop {R4-R9}
+	
+	bx lr
 		
 	endp
+		
 
 
 
