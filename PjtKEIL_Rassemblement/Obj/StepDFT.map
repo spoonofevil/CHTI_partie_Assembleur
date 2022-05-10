@@ -1,0 +1,208 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    principal.o(i.Analyse) refers to dft.o(moncode) for DFT_ModuleAuCarre
+    principal.o(i.Analyse) refers to principal.o(i.Touche) for Touche
+    principal.o(i.Analyse) refers to principal.o(.bss) for dma_buf
+    principal.o(i.Echantillonage) refers to adc_dma.o(i.Start_DMA1) for Start_DMA1
+    principal.o(i.Echantillonage) refers to adc_dma.o(i.Wait_On_End_Of_DMA1) for Wait_On_End_Of_DMA1
+    principal.o(i.StartSon) refers to clock.o(i.CLOCK_Configure) for CLOCK_Configure
+    principal.o(i.StartSon) refers to timer_1234.o(i.Timer_1234_Init_ff) for Timer_1234_Init_ff
+    principal.o(i.StartSon) refers to timer_1234.o(i.Active_IT_Debordement_Timer) for Active_IT_Debordement_Timer
+    principal.o(i.StartSon) refers to timer_1234.o(i.PWM_Init_ff) for PWM_Init_ff
+    principal.o(i.StartSon) refers to gpio.o(i.GPIO_Configure) for GPIO_Configure
+    principal.o(i.StartSon) refers to principal.o(.data) for Cursor
+    principal.o(i.Touche) refers to principal.o(i.StartSon) for StartSon
+    principal.o(i.main) refers to clock.o(i.CLOCK_Configure) for CLOCK_Configure
+    principal.o(i.main) refers to timer_systick.o(i.Systick_Period_ff) for Systick_Period_ff
+    principal.o(i.main) refers to timer_systick.o(i.Systick_Prio_IT) for Systick_Prio_IT
+    principal.o(i.main) refers to adc_dma.o(i.Init_TimingADC_ActiveADC_ff) for Init_TimingADC_ActiveADC_ff
+    principal.o(i.main) refers to adc_dma.o(i.Single_Channel_ADC) for Single_Channel_ADC
+    principal.o(i.main) refers to adc_dma.o(i.Init_Conversion_On_Trig_Timer_ff) for Init_Conversion_On_Trig_Timer_ff
+    principal.o(i.main) refers to adc_dma.o(i.Init_ADC1_DMA1) for Init_ADC1_DMA1
+    principal.o(i.main) refers to principal.o(i.Echantillonage) for Echantillonage
+    principal.o(i.main) refers to principal.o(.bss) for dma_buf
+    dft.o(moncode) refers to dft.o(Trigo) for TabCos
+    startup-rvds.o(RESET) refers to startup-rvds.o(STACK) for __initial_sp
+    startup-rvds.o(RESET) refers to startup-rvds.o(.text) for Reset_Handler
+    startup-rvds.o(RESET) refers to timer_systick.o(i.SysTick_Handler) for SysTick_Handler
+    startup-rvds.o(RESET) refers to timer_1234.o(i.TIM1_UP_IRQHandler) for TIM1_UP_IRQHandler
+    startup-rvds.o(RESET) refers to timer_1234.o(i.TIM1_CC_IRQHandler) for TIM1_CC_IRQHandler
+    startup-rvds.o(RESET) refers to timer_1234.o(i.TIM2_IRQHandler) for TIM2_IRQHandler
+    startup-rvds.o(RESET) refers to timer_1234.o(i.TIM3_IRQHandler) for TIM3_IRQHandler
+    startup-rvds.o(RESET) refers to timer_1234.o(i.TIM4_IRQHandler) for TIM4_IRQHandler
+    startup-rvds.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    adc_dma.o(i.ADC_IRQHandler) refers to adc_dma.o(.data) for .data
+    adc_dma.o(i.DMAChannel1_IRQHandler) refers to adc_dma.o(.data) for .data
+    adc_dma.o(i.Init_Conversion_On_Trig_Timer_ff) refers to timer_1234.o(i.PWM_Init_ff) for PWM_Init_ff
+    adc_dma.o(i.Init_IT_ADC_EOC) refers to adc_dma.o(.data) for .data
+    adc_dma.o(i.Init_IT_End_Of_DMA1) refers to adc_dma.o(.data) for .data
+    adc_dma.o(i.Init_TimingADC_ActiveADC_ff) refers to clock.o(i.CLOCK_GetADCCLK) for CLOCK_GetADCCLK
+    adc_dma.o(i.Init_TimingADC_ActiveADC_ff) refers to clock.o(i.CLOCK_GetHCLK) for CLOCK_GetHCLK
+    clock.o(i.CLOCK_Configure) refers to clock.o(i.CLOCK_HPRECompute) for CLOCK_HPRECompute
+    timer_1234.o(i.Active_IT_Compare_Timer) refers to timer_1234.o(.data) for .data
+    timer_1234.o(i.Active_IT_Debordement_Timer) refers to timer_1234.o(.data) for .data
+    timer_1234.o(i.Capture_Init) refers to clock.o(i.CLOCK_GetTIMCLK) for CLOCK_GetTIMCLK
+    timer_1234.o(i.Capture_Init) refers to dfltui.o(.text) for __aeabi_ui2d
+    timer_1234.o(i.Capture_Init) refers to f2d.o(.text) for __aeabi_f2d
+    timer_1234.o(i.Capture_Init) refers to dmul.o(.text) for __aeabi_dmul
+    timer_1234.o(i.Capture_Init) refers to ddiv.o(.text) for __aeabi_ddiv
+    timer_1234.o(i.Capture_Init) refers to d2f.o(.text) for __aeabi_d2f
+    timer_1234.o(i.Capture_Init) refers to ffltui.o(.text) for __aeabi_ui2f
+    timer_1234.o(i.Capture_Init) refers to fmul.o(.text) for __aeabi_fmul
+    timer_1234.o(i.Capture_Init) refers to ffixui.o(.text) for __aeabi_f2uiz
+    timer_1234.o(i.Capture_Init) refers to ffixi.o(.text) for __aeabi_f2iz
+    timer_1234.o(i.Lire_Duree_Pulse) refers to timer_1234.o(.data) for .data
+    timer_1234.o(i.PWM_Init) refers to f2d.o(.text) for __aeabi_f2d
+    timer_1234.o(i.PWM_Init) refers to ddiv.o(.text) for __aeabi_ddiv
+    timer_1234.o(i.PWM_Init) refers to d2f.o(.text) for __aeabi_d2f
+    timer_1234.o(i.PWM_Init) refers to timer_1234.o(i.Timer_1234_Init) for Timer_1234_Init
+    timer_1234.o(i.PWM_Init_ff) refers to timer_1234.o(i.Timer_1234_Init_ff) for Timer_1234_Init_ff
+    timer_1234.o(i.TIM1_CC_IRQHandler) refers to timer_1234.o(.data) for .data
+    timer_1234.o(i.TIM1_UP_IRQHandler) refers to timer_1234.o(.data) for .data
+    timer_1234.o(i.TIM2_IRQHandler) refers to timer_1234.o(.data) for .data
+    timer_1234.o(i.TIM3_IRQHandler) refers to timer_1234.o(.data) for .data
+    timer_1234.o(i.TIM4_IRQHandler) refers to timer_1234.o(.data) for .data
+    timer_1234.o(i.Timer_1234_Init) refers to clock.o(i.CLOCK_GetTIMCLK) for CLOCK_GetTIMCLK
+    timer_1234.o(i.Timer_1234_Init) refers to ffltui.o(.text) for __aeabi_ui2f
+    timer_1234.o(i.Timer_1234_Init) refers to fmul.o(.text) for __aeabi_fmul
+    timer_1234.o(i.Timer_1234_Init) refers to f2d.o(.text) for __aeabi_f2d
+    timer_1234.o(i.Timer_1234_Init) refers to ddiv.o(.text) for __aeabi_ddiv
+    timer_1234.o(i.Timer_1234_Init) refers to d2f.o(.text) for __aeabi_d2f
+    timer_1234.o(i.Timer_1234_Init) refers to fscalb.o(.text) for __ARM_scalbnf
+    timer_1234.o(i.Timer_1234_Init) refers to ffixui.o(.text) for __aeabi_f2uiz
+    timer_1234.o(i.Timer_1234_Init) refers to fdiv.o(.text) for __aeabi_fdiv
+    timer_1234.o(i.Timer_1234_Init) refers to dfltui.o(.text) for __aeabi_ui2d
+    timer_1234.o(i.Timer_1234_Init) refers to dadd.o(.text) for __aeabi_dadd
+    timer_1234.o(i.Timer_1234_Init) refers to dmul.o(.text) for __aeabi_dmul
+    timer_1234.o(i.Timer_1234_Init_ff) refers to clock.o(i.CLOCK_GetHCLK) for CLOCK_GetHCLK
+    timer_1234.o(i.Timer_1234_Init_ff) refers to clock.o(i.CLOCK_GetTIMCLK) for CLOCK_GetTIMCLK
+    timer_systick.o(i.SysTick_Handler) refers to timer_systick.o(.data) for .data
+    timer_systick.o(i.Systick_Period) refers to clock.o(i.CLOCK_GetHCLK) for CLOCK_GetHCLK
+    timer_systick.o(i.Systick_Period) refers to ffltui.o(.text) for __aeabi_ui2f
+    timer_systick.o(i.Systick_Period) refers to fmul.o(.text) for __aeabi_fmul
+    timer_systick.o(i.Systick_Period) refers to f2d.o(.text) for __aeabi_f2d
+    timer_systick.o(i.Systick_Period) refers to ddiv.o(.text) for __aeabi_ddiv
+    timer_systick.o(i.Systick_Period) refers to d2f.o(.text) for __aeabi_d2f
+    timer_systick.o(i.Systick_Period) refers to ffixui.o(.text) for __aeabi_f2uiz
+    timer_systick.o(i.Systick_Period) refers to fdiv.o(.text) for __aeabi_fdiv
+    timer_systick.o(i.Systick_Period) refers to dmul.o(.text) for __aeabi_dmul
+    timer_systick.o(i.Systick_Prio_IT) refers to timer_systick.o(.data) for .data
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    fmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers to fepilogue.o(.text) for _float_round
+    fscalb.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    ffltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltui.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ffixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup-rvds.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup-rvds.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to principal.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to principal.o(i.main) for main
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing principal.o(.rev16_text), (4 bytes).
+    Removing principal.o(.revsh_text), (4 bytes).
+    Removing principal.o(.rrx_text), (6 bytes).
+    Removing principal.o(i.Analyse), (124 bytes).
+    Removing principal.o(i.StartSon), (84 bytes).
+    Removing principal.o(i.Touche), (10 bytes).
+    Removing principal.o(.data), (4 bytes).
+    Removing signal.o(Signal), (128 bytes).
+    Removing dft.o(mesdata), (0 bytes).
+    Removing dft.o(maram), (0 bytes).
+    Removing dft.o(moncode), (92 bytes).
+    Removing dft.o(Trigo), (256 bytes).
+    Removing startup-rvds.o(HEAP), (512 bytes).
+    Removing adc_dma.o(.rev16_text), (4 bytes).
+    Removing adc_dma.o(.revsh_text), (4 bytes).
+    Removing adc_dma.o(.rrx_text), (6 bytes).
+    Removing adc_dma.o(i.ADC_IRQHandler), (60 bytes).
+    Removing adc_dma.o(i.DMAChannel1_IRQHandler), (28 bytes).
+    Removing adc_dma.o(i.Init_IT_ADC_EOC), (64 bytes).
+    Removing adc_dma.o(i.Init_IT_End_Of_DMA1), (48 bytes).
+    Removing adc_dma.o(i.Init_MultiChan_Regular), (140 bytes).
+    Removing adc_dma.o(i.Wait_On_EOC_ADC), (24 bytes).
+    Removing adc_dma.o(.data), (12 bytes).
+    Removing clock.o(.rev16_text), (4 bytes).
+    Removing clock.o(.revsh_text), (4 bytes).
+    Removing clock.o(.rrx_text), (6 bytes).
+    Removing clock.o(i.CLOCK_GetPCLK1), (8 bytes).
+    Removing clock.o(i.CLOCK_GetPCLK2), (8 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing gpio.o(.rrx_text), (6 bytes).
+    Removing gpio.o(i.GPIOA_Clear), (16 bytes).
+    Removing gpio.o(i.GPIOA_Set), (16 bytes).
+    Removing gpio.o(i.GPIOB_Clear), (16 bytes).
+    Removing gpio.o(i.GPIOB_Set), (16 bytes).
+    Removing gpio.o(i.GPIOC_Clear), (16 bytes).
+    Removing gpio.o(i.GPIOC_Set), (16 bytes).
+    Removing gpio.o(i.GPIO_Configure), (264 bytes).
+    Removing timer_1234.o(.rev16_text), (4 bytes).
+    Removing timer_1234.o(.revsh_text), (4 bytes).
+    Removing timer_1234.o(.rrx_text), (6 bytes).
+    Removing timer_1234.o(i.Active_IT_Compare_Timer), (492 bytes).
+    Removing timer_1234.o(i.Active_IT_Debordement_Timer), (228 bytes).
+    Removing timer_1234.o(i.Capture_Init), (484 bytes).
+    Removing timer_1234.o(i.Lire_Duree_Pulse), (96 bytes).
+    Removing timer_1234.o(i.PWM_Complementaire_Timer1), (60 bytes).
+    Removing timer_1234.o(i.PWM_Init), (200 bytes).
+    Removing timer_1234.o(i.PWM_Set_Value_TIM3_Ch3), (12 bytes).
+    Removing timer_1234.o(i.Timer_1234_Init), (268 bytes).
+    Removing timer_1234.o(i.Timer_Inc_Init), (180 bytes).
+    Removing timer_systick.o(.rev16_text), (4 bytes).
+    Removing timer_systick.o(.revsh_text), (4 bytes).
+    Removing timer_systick.o(.rrx_text), (6 bytes).
+    Removing timer_systick.o(i.Systick_Period), (196 bytes).
+    Removing fmul.o(.text), (100 bytes).
+    Removing fdiv.o(.text), (124 bytes).
+    Removing fscalb.o(.text), (24 bytes).
+    Removing dadd.o(.text), (334 bytes).
+    Removing dmul.o(.text), (228 bytes).
+    Removing ddiv.o(.text), (222 bytes).
+    Removing ffltui.o(.text), (10 bytes).
+    Removing dfltui.o(.text), (26 bytes).
+    Removing ffixi.o(.text), (50 bytes).
+    Removing ffixui.o(.text), (40 bytes).
+    Removing f2d.o(.text), (38 bytes).
+    Removing d2f.o(.text), (56 bytes).
+    Removing fepilogue.o(.text), (110 bytes).
+    Removing depilogue.o(.text), (186 bytes).
+
+68 unused section(s) (total 5810 bytes) removed from the image.
