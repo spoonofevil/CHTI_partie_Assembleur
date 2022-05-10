@@ -388,16 +388,6 @@
               <FileType>1</FileType>
               <FilePath>.\Src\principal.c</FilePath>
             </File>
-            <File>
-              <FileName>Signal.asm</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\Signal.asm</FilePath>
-            </File>
-            <File>
-              <FileName>DFT.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\DFT.s</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -417,6 +407,41 @@
               <FileName>DriverJeuLaser.lib</FileName>
               <FileType>4</FileType>
               <FilePath>.\Driver\DriverJeuLaser.lib</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_DFT</GroupName>
+          <Files>
+            <File>
+              <FileName>DFT.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\DFT\DFT.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_Son</GroupName>
+          <Files>
+            <File>
+              <FileName>bruitverre.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\son\bruitverre.asm</FilePath>
+            </File>
+            <File>
+              <FileName>GestionSon.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\son\GestionSon.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_Valise</GroupName>
+          <Files>
+            <File>
+              <FileName>affichage_valise.o</FileName>
+              <FileType>3</FileType>
+              <FilePath>.\Src\ModuleAffichage\affichage_valise.o</FilePath>
             </File>
           </Files>
         </Group>
@@ -776,7 +801,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\Driver</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -807,16 +832,6 @@
               <FileType>1</FileType>
               <FilePath>.\Src\principal.c</FilePath>
             </File>
-            <File>
-              <FileName>Signal.asm</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\Signal.asm</FilePath>
-            </File>
-            <File>
-              <FileName>DFT.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\DFT.s</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -836,6 +851,41 @@
               <FileName>DriverJeuLaser.lib</FileName>
               <FileType>4</FileType>
               <FilePath>.\Driver\DriverJeuLaser.lib</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_DFT</GroupName>
+          <Files>
+            <File>
+              <FileName>DFT.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\DFT\DFT.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_Son</GroupName>
+          <Files>
+            <File>
+              <FileName>bruitverre.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\son\bruitverre.asm</FilePath>
+            </File>
+            <File>
+              <FileName>GestionSon.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\son\GestionSon.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_Valise</GroupName>
+          <Files>
+            <File>
+              <FileName>affichage_valise.o</FileName>
+              <FileType>3</FileType>
+              <FilePath>.\Src\ModuleAffichage\affichage_valise.o</FilePath>
             </File>
           </Files>
         </Group>
@@ -1295,16 +1345,6 @@
               <FileType>1</FileType>
               <FilePath>.\Src\principal.c</FilePath>
             </File>
-            <File>
-              <FileName>Signal.asm</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\Signal.asm</FilePath>
-            </File>
-            <File>
-              <FileName>DFT.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\DFT.s</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -1324,6 +1364,41 @@
               <FileName>DriverJeuLaser.lib</FileName>
               <FileType>4</FileType>
               <FilePath>.\Driver\DriverJeuLaser.lib</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_DFT</GroupName>
+          <Files>
+            <File>
+              <FileName>DFT.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\DFT\DFT.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_Son</GroupName>
+          <Files>
+            <File>
+              <FileName>bruitverre.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\son\bruitverre.asm</FilePath>
+            </File>
+            <File>
+              <FileName>GestionSon.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\son\GestionSon.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Src_Valise</GroupName>
+          <Files>
+            <File>
+              <FileName>affichage_valise.o</FileName>
+              <FileType>3</FileType>
+              <FilePath>.\Src\ModuleAffichage\affichage_valise.o</FilePath>
             </File>
           </Files>
         </Group>
